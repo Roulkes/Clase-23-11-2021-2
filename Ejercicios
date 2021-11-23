@@ -1,0 +1,82 @@
+#Ejemplo 2.8
+CATE = int(input("Introduce la categoria"))
+SUE = float(input("introduce el sueldo"))
+
+if CATE == 1:
+    SUE = SUE *1.15;
+elif CATE == 2:
+    SUE = SUE *1.10;
+elif CATE == 3:
+    SUE = SUE *1.08;
+elif CATE == 4:
+    SUE = SUE *1.07;
+
+print(f"categoria={CATE}, sueldo={SUE}")
+
+a = int(input("Dame un valor"))
+b = int(input("Dame otro valor"))
+c = int(input("Dame un tercer valor"))
+if a > b:
+    if a > c:
+        if b > c:
+            print(a,b,c)
+        else:
+            print(a,c,b)
+    else:
+        print(c,a,b)
+else:
+    if b > c:
+        if a > c:
+            print(b,a,c)
+        else:
+            print(b,c,a)
+    else:
+        print(c,b,a)
+       
+#Problema 2.14
+TIPOENF = int(input("Introduce el tipo de enfermedad"))
+EDAD = int(input("Introduce la edad"))
+DIAS = int(input("Introduce el numero de dias"))
+COSTO = 0.0
+
+if TIPOENF = 1:
+    COSTO = DIAS *25.0
+elif TIPOENF==2:
+    COSTO = DIAS *16.0
+elif TIPOENF==3:
+    COSTO = DIAS *20.0
+elif TIPOENF==4:
+    COSTO = DIAS *32.0
+
+if EDAD >= 13 and EDAD<=22:
+    COSTO = COSTO *1.10
+print("Costo total =$",COSTO)
+
+# Funcion range()
+#range(<INICIO>,<STOP>,<INCREMENTO>)
+x = range(10)
+print(x)
+x = range(0,10,2)
+print(x)
+
+for j in range(10):
+    print(f"Hola {j}")
+print("<---------------->")
+
+for j in range(0,10,2):
+    print(f"Hola {j}")
+print("<--------------------------->")
+
+frutas = ["uva","aguacate","pera","manzana","sandia"]
+print(frutas[0])
+print(frutas[1])
+print(frutas[2])
+print(frutas[3])
+print(frutas[4])
+print("<--------------------------->")
+for index in range(5):
+    print(frutas[index])
+    
+for i in range(5):
+    print("+++++")
+    
